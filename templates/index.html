@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+  <title>Example with HTMX</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div>
+    <h1>Hello World</h1>
+  </div>
+  <button class="button" hx-get="/hello" hx-target="#message">
+    <text id="message" hx-trigger="load">say hi 👋</text>
+  </button>
+</body>
+
+</html>
